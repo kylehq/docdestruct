@@ -9,7 +9,12 @@
 
 (function($){
 	$(document).ready(function(){
-	
+
+		// Set the in business years value
+        var start = new Date([2007]),
+            now = new Date();
+        $("#business-years").html(now.getFullYear() - start.getFullYear());
+
 		$(".banner-image").backstretch('images/notes.jpg');
 		
 		// Fixed header
